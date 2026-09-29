@@ -1,0 +1,8 @@
+import pandas as pd
+
+df = pd.read_csv("invoices.csv")
+df.head()
+
+df.shape
+
+df.info()
