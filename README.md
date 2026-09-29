@@ -38,6 +38,14 @@ I work in finance (AP, AR, GL, reconciliations). Chasing late payments is a dail
 
 **Main drivers** (feature importance): invoice amount, whether the customer is Delta Foods, invoice month, and whether the customer is Iris Design. Importance values sum to 1.0 and show which inputs the model relied on — they are not accuracy or probability figures.
 
+## Why this matters to a company
+
+- **Focus collection effort.** Instead of chasing every overdue account, the AR team starts each week with a risk-ranked list. In this test, calling the top 15 caught 10 real late payers — roughly double a random pick.
+- **Improve cash flow.** Earlier contact with high-risk customers means faster payment and less money tied up in receivables (lower DSO).
+- **Catch problems early.** A customer whose risk score rises month after month is a warning sign before the account becomes a bad debt.
+- **Explainable, not a black box.** Feature importance shows *why* an invoice is flagged (customer, amount, timing), so finance staff can check the reasoning and management can trust it.
+- **Low cost to start.** Built with free, open-source tools on ordinary invoice data that every finance system already has. No new software to buy.
+
 ## Limitations
 
 - Synthetic data with only 5 input features. Real AR data would add credit terms, payment history, industry, disputes, and so on, and would likely score higher.
@@ -61,6 +69,8 @@ I work in finance (AP, AR, GL, reconciliations). Chasing late payments is a dail
 ## Tools
 
 Python · pandas · scikit-learn · matplotlib · Jupyter
+  
 
+## Tools
 
 Python · pandas · scikit-learn · matplotlib · Jupyter
